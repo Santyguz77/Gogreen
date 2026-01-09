@@ -1113,13 +1113,13 @@
 			});
 
 			// Actualizar estadísticas principales
-			document.getElementById('stat-products').textContent = `${availableProducts} productos`;
-			document.getElementById('stat-orders').textContent = activeOrders;
 			document.getElementById('stat-sales').textContent = Utils.formatCurrency(todaySales);
 			document.getElementById('stat-sales-count').textContent = `${todayOrdersCount} pedidos`;
 			document.getElementById('stat-month').textContent = Utils.formatCurrency(monthSales);
 			document.getElementById('stat-month-count').textContent = `${monthOrdersCount} pedidos`;
 			document.getElementById('stat-avg-ticket').textContent = Utils.formatCurrency(avgTicket);
+			document.getElementById('stat-orders').textContent = activeOrders;
+			document.getElementById('stat-products').textContent = `${availableProducts} productos`;
 
 			// Actualizar estadísticas adicionales
 			document.getElementById('stat-year').textContent = Utils.formatCurrency(yearSales);
