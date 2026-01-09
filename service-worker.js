@@ -1,4 +1,4 @@
-const CACHE_NAME = 'gogreen-v1';
+const CACHE_NAME = 'gogreen-v11-notifications';
 const urlsToCache = [
   '/',
   '/index.html',
@@ -11,7 +11,7 @@ const urlsToCache = [
 
 // Instalación del service worker
 self.addEventListener('install', event => {
-  console.log('[SW] Instalando Service Worker Go Green v1...');
+  console.log('[SW] Instalando Service Worker Go Green v8...');
   event.waitUntil(
     caches.open(CACHE_NAME)
       .then(cache => {
